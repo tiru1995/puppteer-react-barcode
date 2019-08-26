@@ -12,7 +12,7 @@ const Puppeteer = require('puppeteer');
         path: "./screen1.pdf",
         displayHeaderFooter: true,
         headerTemplate: '<span style="font-size: 30px; width: 50px; height: 50px; background-color: black; color:black; margin: 20px;">Header</span>',
-        footerTemplate: '<span style="font-size: 30px; width: 50px; height: 50px; background-color: black; color:black; margin: 20px;">Footer</span>',
+        footerTemplate: '<div id="footer-template" style="font-size:10px !important; color:#808080; padding-left:10px"><span class="date"></span></span><span style= "padding-left:15px" class="pageNumber"></span>of<span class="totalPages"></span></div>',
         pageRanges: " ",
         format: "A4",
         // scale: .54,
